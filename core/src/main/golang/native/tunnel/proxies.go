@@ -179,7 +179,7 @@ func convertProxies(proxies []C.Proxy, uiSubtitlePattern *regexp2.Regexp) []*Pro
 				}
 			}
 		}
-		testURL := "https://www.gstatic.com/generate_204"
+		testURL := "http://1.1.1.1"
 		for k := range p.ExtraDelayHistories() {
 			if len(k) > 0 {
 				testURL = k
@@ -218,7 +218,7 @@ func collectProviders(providers []provider.ProxyProvider, uiSubtitlePattern *reg
 				}
 			}
 
-			testURL := "https://www.gstatic.com/generate_204"
+			testURL := "http://1.1.1.1"
 			for k := range px.ExtraDelayHistories() {
 				if len(k) > 0 {
 					testURL = k
