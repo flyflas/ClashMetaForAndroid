@@ -179,7 +179,7 @@ func convertProxies(proxies []C.Proxy, uiSubtitlePattern *regexp2.Regexp) []*Pro
 				}
 			}
 		}
-		testURL := "http://1.1.1.1"
+		testURL := "https://one.one.one.one/"
 		for k := range p.ExtraDelayHistories() {
 			if len(k) > 0 {
 				testURL = k
@@ -218,7 +218,7 @@ func collectProviders(providers []provider.ProxyProvider, uiSubtitlePattern *reg
 				}
 			}
 
-			testURL := "http://1.1.1.1"
+			testURL := "https://one.one.one.one/"
 			for k := range px.ExtraDelayHistories() {
 				if len(k) > 0 {
 					testURL = k
